@@ -1,0 +1,19 @@
+use Generalstore;
+
+select dayname("1996-11-06");
+
+select orderdate,dayname(orderdate) from orders where day(orderdate)=5;
+
+select 3*10+5/2-2.5;
+
+select avg(Salesprice) from orderline;
+
+select max(onhand),min(onhand) from product;
+
+Select*,sum(salesprice) from orderline;
+
+Select*from customer where city like "B%ton%";
+
+Select* from customer where City like "B%ton%" OR city like'_akville';
+
+Select* from customer where (City like "B%ton%" OR city like'_akville') and CreditLimit > 1500;

@@ -1,0 +1,18 @@
+use generalstore;
+
+select city from customer where city ="Brampton";
+
+select CreditLimit from customer where CreditLimit>2000;
+
+select CustNum from customer where city="Oakville" or "Burlington";
+
+insert into product(ProductNum,ProductType,Descr,Onhand,MSRP) values(30,"sports","skis",250,349.97);
+
+insert into product(Descr,ProductType) values("Toaster","Appliance");
+
+describe product;
+
+select*from product where Onhand is null;
+
+Value inserted is 31.
+Number of rows returns is 10.
